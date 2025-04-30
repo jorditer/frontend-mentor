@@ -1,0 +1,29 @@
+@import "tailwindcss";
+/* Mobile 375px
+	 Desktop 1440px */
+
+:root {
+	--slate-300: hsl(212, 45%, 89%);
+	--slate-500: hsl(216, 15%, 48%);
+	--slate-900: hsl(218, 44%, 22%);
+	--white: hsl(0, 0%, 100%);
+	--spacing-500: 40px;
+	--spacing-300: 24px;
+	--spacing-200: 16px;
+}
+.outfit-body {
+	font-family: "Outfit", sans-serif;
+	font-weight: 400;
+	/* letter-spacing: ; */
+}
+
+.outfit-heading {
+	font-family: "Outfit", sans-serif;
+	font-weight: 700;
+}
+
+
+.testing2 {
+	background: #000;
+}
+/* npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch */
