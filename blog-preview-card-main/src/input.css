@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  /* Using --color as the start tells tailwind its a color type variable */
+  /* Now VsCode will autocomplete it in any variable that uses colors*/
+  --color-background: #f4d04e;
+  --color-custom-dark: #111;
+  --color-custom-gray: #6b6b6b;
+
+  /* Breakpoints, xs:*/
+  /* --breakpoint-xs: 350px; */
+
+  /* Font-family */
+  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+
+}
+
+@layer utilities {
+  .text-heading {
+    font-family: var(--font-sans);
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    color: var(--color-custom-dark);
+  }
+  .text-subheading {
+    font-family: var(--font-sans);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    font-size: 16px;
+    color: var(--color-custom-dark);
+  }
+  .text-body {
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+  }
+  .text-body-bold {
+    font-family: var(--font-sans);
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    color: var(--color-custom-dark);
+  }
+}
+
+/* font-medium specific*/
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/static/Figtree-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* font-extrabold specific */
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* italic */
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/static/Figtree-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* Variable font weight range */
+  font-style: italic;
+  font-display: swap;
+}
+
+/* normal */
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/static/Figtree-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* Variable font weight range */
+  font-style: normal;
+  font-display: swap;
+}
